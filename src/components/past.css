@@ -1,0 +1,28 @@
+
+.type1, .type2 {
+  transition: all 0.5s ease-in;
+  margin: 0;
+}
+
+.type1 {
+  background: linear-gradient(45deg, var(--color-gray-900), #1e40af, #7c3aed);
+}
+
+.type2 {
+  background: linear-gradient(45deg, #7c3aed, #1e40af, var(--color-gray-900));
+}
+
+.type1:hover, .type2:hover {
+   transform: scale3d(1.02, 1.02, 1.02);
+  z-index: 10; 
+  margin: 1rem;
+}
+
+.type1:hover {
+  background: linear-gradient(45deg, #7c3aed, #1e40af, var(--color-gray-900));
+}
+
+.type2:hover {
+  background: linear-gradient(45deg, var(--color-gray-900), #1e40af, #7c3aed);
+}
+

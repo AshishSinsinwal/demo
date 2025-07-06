@@ -1,0 +1,52 @@
+
+.first, .second {
+  transition: all 0.5s ease-in;
+  margin: 0;
+}
+
+.first {
+  background: linear-gradient(45deg, var(--color-gray-900), #1e40af, #7c3aed);
+}
+
+.second {
+  background: linear-gradient(45deg, #7c3aed, #1e40af, var(--color-gray-900));
+}
+
+
+.first:hover, .second:hover {
+  transform: perspective(1000px) rotateY(5deg) translateZ(30px);
+  box-shadow: 0 0 20px #9b6ee855;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 10; 
+  margin: 1rem;
+}
+
+.first:hover {
+  background: linear-gradient(45deg, #7c3aed, #1e40af, var(--color-gray-900));
+}
+
+.second:hover {
+  background: linear-gradient(45deg, var(--color-gray-900), #1e40af, #7c3aed);
+}
+
+
+.flex-row > .first:hover ~ .second:not(:hover),
+.flex-row > .second:hover ~ .first:not(:hover),
+.flex-row > .first:hover + .second:not(:hover),
+.flex-row > .second:hover + .first:not(:hover) {
+  margin: 0;
+}
+
+.bg1{
+  background-color: #0b0e17;
+  border-radius: 1rem;
+}
+
+.bg2{
+  background-color: white;
+  border-radius: 1rem;
+}
+.bg3{
+  background-color: #0b0e17;
+}
+

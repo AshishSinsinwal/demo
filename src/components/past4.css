@@ -1,0 +1,33 @@
+
+.type4 {
+  transition: all 0.5s ease-in;
+}
+
+.type4{
+  background: #1e293b; 
+  color: #f8fafc;       
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid white;
+
+}
+
+.type5 {
+
+  border: 2px solid white;
+  box-shadow: 0 0 20px #9b6ee855;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid white;
+  color: #e0e0e0;
+
+}
+.bg4{
+   background: linear-gradient(
+  45deg,
+  #7c3aed 0%,
+  #1e40af 30%,
+  #0f172a 70%,
+  #020617 100%
+);
+}
+
